@@ -1,3 +1,4 @@
+# Proyecto Final - 
 # Proyecto SEO - Productos Innovadores
 
 ## Descripción
@@ -272,3 +273,44 @@ Finalmente, se incorporaron mejoras de accesibilidad y diseño responsive para g
 - Optimización continua del contenido.
 - Incorporación de nuevas palabras clave.
 - Análisis del posicionamiento mediante herramientas como Google Keyword Planner y SurferSEO.
+
+
+
+Desarrollo Web
+
+## Descripción
+
+Este proyecto consiste en un sitio web desarrollado con HTML5, CSS3 y Bootstrap, aplicando buenas prácticas de SEO, accesibilidad y diseño responsive.
+
+## Tecnologías
+
+- HTML5
+- CSS3
+- Bootstrap 5
+- Git
+- GitHub
+
+## Características
+
+- Diseño Responsive
+- Optimización SEO
+- Imágenes optimizadas
+- Accesibilidad
+- Formularios
+- Bootstrap 5
+
+## Instalación
+
+1. Clonar el repositorio
+
+(https://github.com/josuecalistro/M9-SEO-Proyecto.git)
+
+2. Abrir index.html en el navegador.
+
+## Proyecto desplegado
+
+https://app.netlify.com/projects/vermillion-basbousa-79b735/deploys/6a6142f81e9fc5784595f059
+
+## Autor
+
+Josue Calistro
