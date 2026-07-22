@@ -1,10 +1,10 @@
-# Productos Innovadores
+# Proyecto SEO - Productos Innovadores
 
-## Descripción del proyecto
+## Descripción
 
-Este proyecto consiste en el desarrollo de un sitio web utilizando HTML5 y CSS3, aplicando buenas prácticas de estructura, accesibilidad, diseño responsive y optimización SEO.
+Este proyecto consiste en el desarrollo de un sitio web utilizando HTML5 y CSS3, aplicando buenas prácticas de desarrollo web, accesibilidad, diseño responsive y optimización SEO.
 
-El objetivo principal es crear un sitio preparado para ser interpretado correctamente por los motores de búsqueda, ofreciendo una mejor experiencia para los usuarios en diferentes dispositivos.
+El objetivo es ofrecer una experiencia de usuario de calidad y mejorar la visibilidad del sitio en los motores de búsqueda mediante técnicas de SEO On-Page y SEO Técnico.
 
 ---
 
@@ -13,15 +13,16 @@ El objetivo principal es crear un sitio preparado para ser interpretado correcta
 - HTML5
 - CSS3
 - Diseño Responsive
+- SEO On-Page
 - SEO Técnico
-- Optimización de imágenes
-- Git y GitHub
+- Git
+- GitHub
 
 ---
 
 # Estructura del proyecto
 
-
+```
 Proyecto-SEO/
 
 │
@@ -30,202 +31,244 @@ Proyecto-SEO/
 ├── contacto.html
 │
 ├── css/
-│ └── styles.css
+│   └── styles.css
 │
 ├── img/
-│ ├── producto1.webp
-│ ├── producto2.webp
-│ └── producto3.webp
+│   ├── producto1.webp
+│   ├── producto2.webp
+│   └── producto3.webp
 │
 ├── robots.txt
 ├── sitemap.xml
 ├── .htaccess
 └── README.md
-
+```
 
 ---
 
-# Implementaciones SEO
+# SEO Técnico
 
-## Archivo robots.txt
+Se implementaron diferentes técnicas para mejorar la indexación del sitio web.
 
-Se creó el archivo `robots.txt` para controlar el comportamiento de los motores de búsqueda.
+## robots.txt
 
-Funciones implementadas:
+Se creó el archivo `robots.txt` para indicar a los motores de búsqueda qué contenido puede ser rastreado.
+
+Configuración aplicada:
 
 - Permitir el rastreo general del sitio.
-- Bloquear carpetas privadas o administrativas.
-- Declarar la ubicación del sitemap.xml.
-
-Esto ayuda a mejorar la gestión del rastreo por parte de los crawlers.
+- Bloquear carpetas privadas.
+- Declarar la ubicación del sitemap.
 
 ---
 
-## Sitemap.xml
+## sitemap.xml
 
-Se implementó el archivo `sitemap.xml` con las principales URLs del sitio.
+Se creó un archivo `sitemap.xml` con las páginas principales del sitio.
 
 Incluye:
 
 - URL de cada página.
 - Fecha de última modificación.
-- Prioridad de cada sección.
+- Prioridad de indexación.
 
-Su objetivo es facilitar que los buscadores encuentren e indexen correctamente el contenido.
+Esto facilita que Google encuentre e indexe el contenido.
 
 ---
-# Accesibilidad y Responsive Design
 
-Se implementaron mejoras siguiendo buenas prácticas de accesibilidad y estándares WCAG.
+## Canonical
 
-## Diseño Responsive
-
-Se agregaron Media Queries para adaptar el sitio a diferentes dispositivos:
-
-- Tablets mediante @media (max-width: 992px).
-- Dispositivos móviles mediante @media (max-width: 576px).
-
-Estas adaptaciones permiten una correcta visualización del contenido en diferentes tamaños de pantalla.
-
-## Estados Focus
-
-Se implementaron estilos :focus-visible en elementos interactivos:
-
-- Enlaces.
-- Botones.
-- Campos de formulario.
-
-Esto mejora la navegación mediante teclado y facilita la accesibilidad.
-
-## Skip Link
-
-Se agregó un enlace "Saltar al contenido principal" para mejorar la experiencia de usuarios que utilizan lectores de pantalla o navegación por teclado.
-
-## Validación HTML
-
-La estructura HTML fue revisada evitando:
-
-- Etiquetas repetidas como header y main.
-- Anidamientos incorrectos.
-- Errores semánticos.
-
-Se recomienda validar el código mediante W3C Markup Validation Service.
-## Canonicalización
-
-Se agregaron etiquetas canonical en las páginas HTML:
+Todas las páginas incluyen la etiqueta:
 
 ```html
 <link rel="canonical" href="URL-preferida">
+```
 
-Esto permite indicar a los motores de búsqueda cuál es la versión principal de una página y evitar problemas de contenido duplicado.
+Su finalidad es evitar contenido duplicado y definir la versión principal de cada página.
 
-Redirecciones 301
+---
 
-Se configuraron redirecciones permanentes mediante .htaccess.
+## Redirecciones 301
 
-Su función es mantener la autoridad SEO cuando una URL cambia, evitando:
+Se implementó un archivo `.htaccess` con redirecciones permanentes para conservar la autoridad SEO cuando una URL cambia.
 
-Errores 404.
-Pérdida de posicionamiento.
-Mala experiencia del usuario.
-Mejoras HTML5 y Semántica Web
+---
 
-Se corrigió la estructura del HTML utilizando etiquetas semánticas:
+# SEO On-Page
 
-<header>
-<nav>
-<main>
-<section>
-<footer>
+## Title
 
-Esto permite que los motores de búsqueda y tecnologías asistivas interpreten mejor el contenido.
-
-Se evitó el uso incorrecto de etiquetas, como colocar un <main> dentro de un <footer>, ya que puede afectar la comprensión del documento por parte de los crawlers.
-
-Sistema de navegación
-
-Se implementó una navegación uniforme en todas las páginas del sitio.
-
-Todas las secciones incluyen:
-
-Inicio.
-Productos.
-Contacto.
-
-Esto mejora la experiencia del usuario y facilita el rastreo interno del sitio.
-
-Optimización de imágenes
-
-Las imágenes fueron optimizadas utilizando formato WebP para mejorar la velocidad de carga.
-
-Además, se implementaron atributos importantes:
-
-<img 
-src="imagen.webp"
-alt="Descripción de la imagen"
-loading="lazy">
-
-Beneficios:
-
-Mejor rendimiento.
-Mejor accesibilidad.
-Mejor posicionamiento SEO.
-Diseño Responsive
-
-El diseño fue adaptado para diferentes tamaños de pantalla mediante Media Queries.
-
-Se aplicaron mejoras como:
-
-img{
-max-width:100%;
-height:auto;
-}
-
-Esto permite que las imágenes sean adaptativas y evita problemas de visualización en dispositivos pequeños.
-
-También se agregaron estilos responsive para:
-
-Navegación móvil.
-Ajuste de tamaños de texto.
-Adaptación del contenido.
-Accesibilidad
-
-Se mejoraron los formularios asociando correctamente etiquetas e inputs.
+Cada página posee un título único y descriptivo.
 
 Ejemplo:
 
-<label for="nombre">
-Nombre:
-</label>
+```
+Productos Innovadores | Tecnología y Soluciones Modernas
+```
 
-<input 
+---
+
+## Meta Description
+
+Se agregaron meta descripciones optimizadas para cada página.
+
+Ejemplo:
+
+```
+Descubre productos innovadores y tecnológicos con diseños modernos y soluciones para tu día a día.
+```
+
+---
+
+## Headings
+
+Se organizó correctamente la jerarquía de encabezados utilizando:
+
+- H1 para el título principal.
+- H2 para las secciones.
+- H3 para los subtítulos.
+
+Esto mejora la comprensión del contenido por parte de Google.
+
+---
+
+## Investigación de Palabras Clave
+
+Se seleccionaron palabras clave relacionadas con el contenido del sitio:
+
+- Productos innovadores.
+- Productos tecnológicos.
+- Comprar productos online.
+
+Estas palabras fueron utilizadas de manera natural en:
+
+- Títulos.
+- Encabezados.
+- Meta descripciones.
+- Contenido.
+- Textos alternativos.
+
+---
+
+## Imágenes
+
+Las imágenes fueron optimizadas mediante:
+
+- Formato WebP.
+- Atributos ALT personalizados.
+- Carga diferida mediante `loading="lazy"`.
+
+Ejemplo:
+
+```html
+<img
+src="producto.webp"
+alt="Producto tecnológico innovador"
+loading="lazy">
+```
+
+---
+
+# Accesibilidad
+
+Se implementaron diversas mejoras para facilitar la navegación.
+
+## Focus
+
+Todos los elementos interactivos cuentan con estilos `:focus-visible`.
+
+Esto permite identificar fácilmente el elemento seleccionado al navegar con teclado.
+
+---
+
+## Skip Link
+
+Se agregó un enlace "Saltar al contenido principal" para mejorar la accesibilidad.
+
+---
+
+## Formularios
+
+Todos los formularios utilizan correctamente:
+
+- label
+- for
+- id
+
+Ejemplo:
+
+```html
+<label for="nombre">Nombre</label>
+
+<input
 id="nombre"
 type="text">
+```
 
-Esto permite que los lectores de pantalla interpreten correctamente cada campo.
+Esto mejora la compatibilidad con lectores de pantalla.
 
-Buenas prácticas aplicadas
+---
 
-✅ HTML5 semántico
-✅ CSS organizado
-✅ Diseño adaptable
-✅ Imágenes optimizadas
-✅ Atributos ALT personalizados
-✅ Navegación consistente
-✅ SEO técnico implementado
-✅ Formularios accesibles
-✅ Código preparado para buscadores
+# Diseño Responsive
 
-Objetivo del proyecto
+Se agregaron Media Queries para adaptar el sitio a distintos dispositivos.
 
-Crear un sitio web optimizado para usuarios y motores de búsqueda, aplicando técnicas de SEO técnico que mejoren la indexabilidad, accesibilidad y experiencia de navegación.
+### Tablet
 
-Reflexión SEO
+```
+@media (max-width: 992px)
+```
 
-La implementación de configuraciones como robots.txt, sitemap.xml, canonicalización y redirecciones 301 mejora la manera en que los motores de búsqueda descubren, interpretan e indexan un sitio web.
+### Celulares
 
-El archivo robots.txt permite controlar qué contenido debe ser rastreado, mientras que el sitemap.xml facilita la identificación de las páginas importantes del proyecto.
+```
+@media (max-width: 576px)
+```
 
-Las etiquetas canonical ayudan a evitar problemas de contenido duplicado indicando cuál es la versión principal de una URL. Por otro lado, las redirecciones 301 permiten conservar la autoridad SEO cuando se modifican direcciones antiguas.
+Además:
 
-Además, aplicar HTML semántico, imágenes optimizadas y diseño responsive mejora tanto la experiencia del usuario como la comprensión del sitio por parte de los buscadores.
+- Imágenes adaptativas.
+- Navegación responsive.
+- Formularios adaptables.
+- Ajuste de tipografía.
+
+---
+
+# Buenas prácticas implementadas
+
+- HTML5 semántico.
+- Navegación uniforme en todas las páginas.
+- Código organizado.
+- Etiquetas ALT descriptivas.
+- Meta etiquetas optimizadas.
+- Canonical.
+- robots.txt.
+- sitemap.xml.
+- Redirecciones 301.
+- Diseño responsive.
+- Accesibilidad WCAG.
+- Optimización SEO.
+
+---
+
+# Reflexión
+
+Durante el desarrollo del proyecto se aplicaron diferentes técnicas de SEO para mejorar la indexabilidad y la experiencia del usuario.
+
+El archivo robots.txt permite controlar el rastreo de los motores de búsqueda, mientras que el sitemap.xml facilita la indexación de las páginas principales.
+
+Las etiquetas canonical ayudan a evitar problemas de contenido duplicado y las redirecciones 301 permiten conservar la autoridad SEO cuando una URL cambia.
+
+También se optimizó el contenido mediante el uso de palabras clave, meta etiquetas, encabezados correctamente estructurados e imágenes optimizadas.
+
+Finalmente, se incorporaron mejoras de accesibilidad y diseño responsive para garantizar una mejor experiencia de navegación en diferentes dispositivos y para usuarios que utilizan tecnologías asistivas.
+
+---
+
+# Mejoras futuras
+
+- Integración con Google Search Console.
+- Monitoreo del rendimiento SEO.
+- Optimización continua del contenido.
+- Incorporación de nuevas palabras clave.
+- Análisis del posicionamiento mediante herramientas como Google Keyword Planner y SurferSEO.
