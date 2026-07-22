@@ -274,6 +274,16 @@ Finalmente, se incorporaron mejoras de accesibilidad y diseño responsive para g
 - Incorporación de nuevas palabras clave.
 - Análisis del posicionamiento mediante herramientas como Google Keyword Planner y SurferSEO.
 
+## Mejoras implementadas
+
+- Optimización de imágenes a formato WebP.
+- Implementación de carga diferida (`loading="lazy"`).
+- Mejora de atributos `alt` para accesibilidad.
+- Uso de etiquetas HTML semánticas.
+- Integración de Bootstrap 5.
+- Optimización SEO.
+- Ajustes para mejorar Core Web Vitals.
+
 
 
 Desarrollo Web
