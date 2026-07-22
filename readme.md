@@ -74,7 +74,42 @@ Incluye:
 Su objetivo es facilitar que los buscadores encuentren e indexen correctamente el contenido.
 
 ---
+# Accesibilidad y Responsive Design
 
+Se implementaron mejoras siguiendo buenas prácticas de accesibilidad y estándares WCAG.
+
+## Diseño Responsive
+
+Se agregaron Media Queries para adaptar el sitio a diferentes dispositivos:
+
+- Tablets mediante @media (max-width: 992px).
+- Dispositivos móviles mediante @media (max-width: 576px).
+
+Estas adaptaciones permiten una correcta visualización del contenido en diferentes tamaños de pantalla.
+
+## Estados Focus
+
+Se implementaron estilos :focus-visible en elementos interactivos:
+
+- Enlaces.
+- Botones.
+- Campos de formulario.
+
+Esto mejora la navegación mediante teclado y facilita la accesibilidad.
+
+## Skip Link
+
+Se agregó un enlace "Saltar al contenido principal" para mejorar la experiencia de usuarios que utilizan lectores de pantalla o navegación por teclado.
+
+## Validación HTML
+
+La estructura HTML fue revisada evitando:
+
+- Etiquetas repetidas como header y main.
+- Anidamientos incorrectos.
+- Errores semánticos.
+
+Se recomienda validar el código mediante W3C Markup Validation Service.
 ## Canonicalización
 
 Se agregaron etiquetas canonical en las páginas HTML:
