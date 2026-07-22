@@ -1,0 +1,4 @@
+RewriteEngine On
+
+
+Redirect 301 /producto-viejo.html https://www.productosinnovadores.com/productos.html
