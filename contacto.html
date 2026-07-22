@@ -1,135 +1,118 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
 
+    <meta charset="UTF-8">
 
-<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Contacto | Atención al Cliente</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Contacta con Productos Innovadores para consultas, información y pedidos online.">
 
+    <link rel="canonical" href="https://www.productosinnovadores.com/contacto.html">
 
-<title>
-Contacto | Atencion al Cliente
-</title>
-
-
-<meta 
-name="description"
-content="Contacta con Productos Innovadores para consultas, información y pedidos online."
->
-
-
-<link rel="canonical" href="https://www.productosinnovadores.com/contacto.html">
-
-
-<link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
-
-
 <body>
+
     <a class="skip-link" href="#contenido">
-    Saltar al contenido principal
-</a>
+        Saltar al contenido principal
+    </a>
 
+    <header>
 
-<header>
+        <h1>Atención al Cliente</h1>
 
-<h1>
-Contacto
-</h1>
-<header>
+        <nav aria-label="Menú principal">
 
-<h1>
-Atencion al Cliente
-</h1>
+    <ul>
 
+        <li>
+            <a href="index.html">Inicio</a>
+        </li>
 
-<nav>
+        <li>
+            <a href="productos.html">Productos</a>
+        </li>
 
-<ul>
+        <li>
+            <a href="contacto.html">Contacto</a>
+        </li>
 
-<li>
-<a href="index.html">
-Inicio
-</a>
-</li>
+        <li>
+            <a href="privacidad.html">Privacidad</a>
+        </li>
 
-
-<li>
-<a href="productos.html">
-Productos
-</a>
-</li>
-
-
-<li>
-<a href="contacto.html">
-Contacto
-</a>
-</li>
-
-
-</ul>
+    </ul>
 
 </nav>
-<main>
 
+    </header>
 
-<form>
+    <main id="contenido">
 
+        <h2>Formulario de contacto</h2>
 
-<form action="#" method="post">
+        <form action="#" method="post">
 
-  <label for="nombre">Nombre</label>
-  <input type="text" id="nombre" name="nombre" required>
+            <label for="nombre">Nombre</label>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                autocomplete="name"
+                required>
 
-  <label for="email">Correo electrónico</label>
-  <input type="email" id="email" name="email" required>
+            <label for="email">Correo electrónico</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required>
 
-  <label for="mensaje">Mensaje</label>
-  <textarea id="mensaje" name="mensaje" required></textarea>
+            <label for="mensaje">Mensaje</label>
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                required></textarea>
 
-  <div class="form-check">
-    <input
-      type="checkbox"
-      id="privacidad"
-      name="privacidad"
-      required>
-    <label for="privacidad">
-      He leído y acepto la Política de Privacidad.
-    </label>
-  </div>
+            <div class="form-check">
 
-  <button type="submit">Enviar</button>
-    <form action="contacto.html" method="post"></form>
-</form>
+                <input
+                    type="checkbox"
+                    id="privacidad"
+                    name="privacidad"
+                    required>
 
+                <label for="privacidad">
+                    He leído y acepto la
+                    <a href="privacidad.html">Política de Privacidad</a>.
+                </label>
 
-</form>
+            </div>
 
+            <button type="submit">
+                Enviar
+            </button>
 
+        </form>
 
-</main>
+    </main>
 
+    <footer>
 
+        <p>&copy; 2026 Productos Innovadores. Todos los derechos reservados.</p>
 
-<footer>
-
-<p>
-Productos Innovadores
-</p>
-
-
-</footer>
-
+    </footer>
 
 </body>
-
 
 </html>
