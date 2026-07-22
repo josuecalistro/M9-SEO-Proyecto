@@ -40,6 +40,44 @@ content="Contacta con nuestro equipo para consultas y pedidos."
 <h1>
 Contacto
 </h1>
+<header>
+
+<h1>
+Productos Innovadores
+</h1>
+
+
+<nav>
+
+<ul>
+
+<li>
+<a href="index.html">
+Inicio
+</a>
+</li>
+
+
+<li>
+<a href="productos.html">
+Productos
+</a>
+</li>
+
+
+<li>
+<a href="contacto.html">
+Contacto
+</a>
+</li>
+
+
+</ul>
+
+</nav>
+
+
+</header>
 
 </header>
 
@@ -51,34 +89,40 @@ Contacto
 <form>
 
 
-<label>
-Nombre
+<label for="nombre">
+Nombre:
+</label>
+
+<input 
+type="text"
+id="nombre"
+name="nombre"
+>
+
+
+<label for="email">
+Email:
+</label>
+
+<input 
+type="email"
+id="email"
+name="email"
+>
+
+
+<label for="mensaje">
+Mensaje:
 </label>
 
 
-<input type="text" required>
+<textarea
+id="mensaje"
+name="mensaje">
+</textarea>
 
 
-
-<label>
-Email
-</label>
-
-
-<input type="email" required>
-
-
-
-<label>
-Mensaje
-</label>
-
-
-<textarea required></textarea>
-
-
-
-<button>
+<button type="submit">
 Enviar
 </button>
 
